@@ -1,0 +1,22 @@
+[project]
+name = "asyd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Maxwell Buk", email = "maxwellbuk@yandex.ru" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "questionary>=2.1.1",
+    "rich>=15.0.0",
+    "yadisk[async-defaults]>=3.4.1",
+]
+
+[project.scripts]
+asyd = "asyd:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
